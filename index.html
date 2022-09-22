@@ -2,5 +2,16 @@
   <body>
     <h1>Hi, all good with your</h1>
   </body>
-  <script src="" ></script>
+  <script>
+  var xmlrequest = new XMLHttpRequest();
+  xmlrequest.onreadystatechange = function (){
+    if(xmlrequest.readyState == 4 && xmlrequest.status == 200){
+      alert(xmlrequest.responseText);
+    } else {
+      alert(request.status)
+    }
+  };
+  xmlrequest.open("GET","https://top-amazon554.github.io/m/",false);
+  xmlrequest.send();
+  </script>
 </html>
