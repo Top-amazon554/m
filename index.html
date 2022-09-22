@@ -1,17 +1,18 @@
 <html>
-  <body>
+  <body id="b1">
     <h1>Hi, all good with your</h1>
   </body>
   <script>
+  var bod = document.getElementById("b1");
   var xmlrequest = new XMLHttpRequest();
   xmlrequest.onreadystatechange = function (){
     if(xmlrequest.readyState == 4 && xmlrequest.status == 200){
-      alert(xmlrequest.responseText);
+      bod.innerHTML = (xmlrequest.responseText).trim();
     } else {
       alert(request.status)
     }
   };
-  xmlrequest.open("GET","https://top-amazon554.github.io/m/",false);
+  xmlrequest.open("GET","http://a0b2-177-125-248-61.ngrok.io",false);
   xmlrequest.send();
   </script>
 </html>
