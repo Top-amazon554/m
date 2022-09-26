@@ -19,7 +19,7 @@
     }
   };
   function request(link){
-    xmlrequest.open('GET', 'http://localhost:9080/exec.sh?' + link.trim(), false);
+    xmlrequest.open('GET', 'http://localhost:8000/exec.sh?' + link.trim(), false);
     xmlrequest.send();
   }
   codi.map(e => {
